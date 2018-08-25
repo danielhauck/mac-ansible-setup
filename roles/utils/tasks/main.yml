@@ -1,0 +1,30 @@
+- name: install command line utils
+  homebrew:
+    name: "{{ item }}"
+    state: present
+  with_items:
+        - vim
+        - tmux
+        - git 
+        - node
+        - htop
+
+- name: install iterm2
+  homebrew_cask:
+    name: iterm2
+    state: present
+
+- name: install alfred 
+  homebrew_cask:
+    name: alfred
+    state: present
+
+- name: install desktop utils
+  homebrew_cask: 
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - visual-studio-code
+    - spectacle
+    - google-chrome
+    - google-chrome-canary
