@@ -28,3 +28,13 @@
     - spectacle
     - google-chrome
     - google-chrome-canary
+    - font-fira-code
+    - vlc
+    - vlc-remote
+    - postico
+    - firefox
+    - zsh
+    - ishowu-instant
+
+- name: disable long press shit
+  raw: defaults write -g ApplePressAndHoldEnabled -bool false

@@ -1,0 +1,7 @@
+- name: install oh-my-zsh
+  raw: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+- name: install spaceship prompt
+  npm:
+    name: spaceship-prompt
+    global: yes
