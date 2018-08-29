@@ -11,7 +11,7 @@ echo "INFO: This will take some time depending on the amount of programs you are
 echo "INFO: I'd suggest you, to go to lunch now"
 
 ansible-galaxy install -r requirements.yml
-ansible-playbook ${1}.yml
+ansible-playbook install.yml
 
 
 echo "INFO: Your mac is ready now. Have Fun!"
