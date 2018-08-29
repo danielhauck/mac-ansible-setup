@@ -1,0 +1,21 @@
+- name: install {{ item }}
+  homebrew_casks:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - phpstorm
+    - alfred
+    - visual-studio
+    - google-chrome
+    - google-chrome-canary
+    - firefox
+    - sequel-pro
+    - docker
+    - spectacle
+    - microsoft-office
+    - microsoft-teams
+    - postman
+    - sourcetree
+    - hipchat
+    - keepassx
+    - atom

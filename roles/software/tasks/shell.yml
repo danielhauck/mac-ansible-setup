@@ -1,0 +1,13 @@
+- name: install command line utils
+  homebrew: 
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - vim
+    - tmux
+    - git
+    - node
+    - npm
+    - htop
+    - mysql-client
+    - fish 
