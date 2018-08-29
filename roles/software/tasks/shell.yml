@@ -8,6 +8,11 @@
     - git
     - node
     - npm
+    - nvm
+    - yarn
     - htop
     - mysql-client
     - fish 
+
+
+  
