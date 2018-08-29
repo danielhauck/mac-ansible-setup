@@ -1,3 +1,11 @@
+- name: install zsh and completions
+  homebrew:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - zsh 
+    - zsh-completions
+
 - name: install oh-my-zsh
   raw: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 

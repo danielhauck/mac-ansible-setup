@@ -1,5 +1,8 @@
+#!/usr/bin/env bash
+
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install ansible
 
-
+ansible-galaxy install -r requirements.yml
+ansible-playbook ${1}.yml

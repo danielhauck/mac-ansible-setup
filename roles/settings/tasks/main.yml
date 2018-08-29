@@ -1,0 +1,2 @@
+- name: disable long press accenture recommendation 
+  raw: defaults write -g ApplePressAndHoldEnabled -bool false
