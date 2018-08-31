@@ -3,6 +3,3 @@
 
 - name: install desktop applications
   include: desktop.yml
-
-- name: apply settings
-  include: settings.yml

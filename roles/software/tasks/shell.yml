@@ -1,3 +1,7 @@
+- name: tap repo for apg 
+  homebrew_tap:
+    name: jzaleski/homebrew-jzaleski
+
 - name: install command line utils
   homebrew: 
     name: "{{ item }}"
@@ -13,6 +17,7 @@
     - htop
     - mysql-client
     - fish 
+    - kubernetes-cli
+    - composer
+    - apg
 
-
-  

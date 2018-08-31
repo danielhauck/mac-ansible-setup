@@ -1,21 +1,22 @@
-- name: install {{ item }}
-  homebrew_casks:
+- name: install desktop software
+  homebrew_cask:
     name: "{{ item }}"
     state: present
   with_items:
     - phpstorm
     - alfred
-    - visual-studio
+    - visual-studio-code
     - google-chrome
     - google-chrome-canary
     - firefox
     - sequel-pro
     - docker
     - spectacle
-    - microsoft-office
-    - microsoft-teams
     - postman
     - sourcetree
     - hipchat
     - keepassx
     - atom
+    - iterm2
+    - virtualbox
+    - rocket

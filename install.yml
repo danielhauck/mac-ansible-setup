@@ -4,4 +4,7 @@
   roles:
     - software
     - zsh
+    - settings
+# TODO: Implement dock reset
+#    - dock
   
